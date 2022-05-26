@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Money</title>
+</head>
+<body>  
+
+
+    <form method="POST" action = "/test">
+      <div class = "form-group">
+        <h1>Wybierz walutę:</h1>
+        <label for="waluta">Wybierz walutę:</label>
+        <select name="waluta" id="waluta">
+          <option value="USD">Dolar amerykański</option>
+          <option value="AUD">Dolar australijski</option>
+          <option value="CAD">Dolar kanadyjski</option>
+          <option value="EUR">Euro</option>
+          <option value="HUF">Forint</option>
+          <option value="CHF">Frank szwajcarski</option>
+          <option value="GBP">Funt szterling</option>
+          <option value="JPY">Jen</option>
+          <option value="CZK">Korona czeska</option>
+          <option value="DKK">Korona duńska</option>
+          <option value="NOK">Korona norweska</option>
+          <option value="SEK">Korona szwedzka</option>
+          <option value="XDR">Special drawing rights</option>
+        </select>
+        <h1>Wpisz ilość waluty:</h1>
+        <input type="number" name = "ilosc">
+      </div>
+      <input class="btn btn-primary" type="submit" value="Przelicz">
+    </form>
+</form>
+<h1> Wynik: </h1>
+<h3> Potrzebujesz {{ wynik }} PLN aby kupic {{ ile }} {{ waluta }} .</h3>
+</body>
+</html>
